@@ -6,3 +6,4 @@ export default defineConfig({
     outDir: '../dist', // Establece la carpeta de salida del build
   },
 });
+
