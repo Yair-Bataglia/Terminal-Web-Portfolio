@@ -103,7 +103,7 @@ const selectCommandBlock = (commandUser) => {
       return notFoundCommand(commandUser)
   }
 } // !-------------------END----------------------------
-
+3
 
 
 // !-----------FUNCTION enterCommand -----------------
