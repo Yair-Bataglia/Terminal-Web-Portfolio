@@ -95,6 +95,8 @@ const selectCommandBlock = (commandUser) => {
       return getCommandTemplate(lowerCommand)
     case 'projects':
       return getCommandTemplate(lowerCommand)
+    case 'skills':
+      return getCommandTemplate(lowerCommand)
     case '':
       break
     default:

@@ -122,6 +122,7 @@ input:focus {
 }
 
 .sectionTitle {
+  padding: 10px 0px;
   color: #6ca6c0;
   font-weight: 500;
 }
@@ -161,16 +162,25 @@ a {
 }
 
 .indent {
-  margin-left: 8px;
+  margin-bottom: 100px;
 }
 
 .hidden {
   display: none;
 }
-
-.opcion {
+.column {
+  padding: 10px 0px;
   display: grid;
   grid-template-columns: 50% 1fr;
+}
+
+.opcion {
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+}
+.opcion:hover {
+  background-color: #0000003a;
 }
 
 @media (max-width: 750px) {
