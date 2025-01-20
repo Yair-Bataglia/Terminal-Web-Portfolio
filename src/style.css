@@ -170,7 +170,7 @@ a {
 
 .opcion {
   display: grid;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 50% 1fr;
 }
 
 @media (max-width: 750px) {
