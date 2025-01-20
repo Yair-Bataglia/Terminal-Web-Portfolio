@@ -10,6 +10,10 @@
   --title: #8AE234;
   --command: #FCE94F;
   --error: #ff8383;
+  --link: #e4e1e6;
+  --linkHover: #6ca6c0;
+  --barLink: #6ca6c0;
+  --sectionTitle: #6ca6c0;
 }
 
 * {
@@ -125,6 +129,25 @@ input:focus {
 .title {
   color: var(--title);
   font-weight: 500;
+}
+a {
+  text-decoration: none; /* Elimina el subrayado por defecto */
+}
+.link {
+  color: var(--link);
+  position: relative; /* Necesario para el pseudo-elemento */
+}
+.link:hover {
+  color: var(--linkHover);
+}
+.link:hover::after {
+  content: ''; /* Agrega el pseudo-elemento */
+  position: absolute;
+  bottom: -1px; /* Ajusta la distancia entre el texto y la línea */
+  left: 0;
+  width: 100%;
+  height: 1px; /* Grosor de la línea */
+  background-color: var(--barLink); /* Color de la línea */
 }
 
 .error {
