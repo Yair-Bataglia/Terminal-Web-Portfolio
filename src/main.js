@@ -89,13 +89,17 @@ const selectCommandBlock = (commandUser) => {
       return getCommandTemplate(lowerCommand)
     case 'clear':
       return clearCommand()
-    case 'about':
+    case 'yair':
       return getCommandTemplate(lowerCommand)
-    case 'social':
+    case 'redes':
       return getCommandTemplate(lowerCommand)
-    case 'projects':
+    case 'projectos':
       return getCommandTemplate(lowerCommand)
-    case 'skills':
+    case 'habilidades':
+      return getCommandTemplate(lowerCommand)
+    case 'experiencia':
+      return getCommandTemplate(lowerCommand)
+    case 'educacion':
       return getCommandTemplate(lowerCommand)
     case '':
       break
