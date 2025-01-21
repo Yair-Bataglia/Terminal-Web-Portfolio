@@ -11,6 +11,7 @@ dist
 prueba
 
 node_modules
+.vite
 
 *.local
 
