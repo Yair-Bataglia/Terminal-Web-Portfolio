@@ -93,7 +93,7 @@ const selectCommandBlock = (commandUser) => {
       return getCommandTemplate(lowerCommand)
     case 'redes':
       return getCommandTemplate(lowerCommand)
-    case 'projectos':
+    case 'proyectos':
       return getCommandTemplate(lowerCommand)
     case 'habilidades':
       return getCommandTemplate(lowerCommand)
