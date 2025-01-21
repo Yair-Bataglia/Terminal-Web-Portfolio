@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>Terminal</title>
+  <script type="module" crossorigin src="/portfolio/assets/index-BDBRZZ_s.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BGDZ-ndp.css">
+</head>
+
+<body>
+
+  <main id="terminalWindow">
+    <div class="terminal">
+      <section id="terminal" class="hidden">
+        <div class="command array">Successfull login -<span class="error" id="date"></span></div>
+        <div class="title array">Mi Portofolio</div>
+        <p class="array">Hola! Bienvenidos a mi portafolio, para ver la lista de comandos ingresa</p> <span
+          class="command array">help</span>
+      </section>
+
+      <div class="prompt hidden">
+        <span class="command array">$</span>
+        <span class="title array">gestuser</span>
+        <input id="promtInput">
+      </div>
+    </div>
+  </main>
+  <div class="hidden" id="promptClone">
+    <span class="command">$</span>
+    <span class="title">gestuser</span>
+    <span class="promptCloneInput"></span>
+    <div class="promptCloneContent"></div>
+  </div>
+
+  <!-- !----------------------------Templates para clonar------------------- -->
+
+  <div class="hidden" id="help">
+    <div class="sectionTitle">Podes ingresar cualquier de estos comandos:</div>
+    <div class="">
+      <div class="column">
+        <span class="title">Command</span>
+        <span class="title">Value</span>
+      </div>
+      <div class="opcion">
+        <span class="command">yair</span>
+        <span class="">Sobre mi
+      </div>
+    </div>
+    <div class="opcion">
+      <span class="command">redes</span>
+      <span class="">Listado de mis redes redeses</span>
+    </div>
+    <div class="opcion">
+      <span class="command">habilidades</span>
+      <span class="">Las herramientas con las que trabajo</span>
+    </div>
+    <div class="opcion">
+      <span class="command">experiencia</span>
+      <span class="">Donde trabaje hasta ahora</span>
+    </div>
+    <div class="opcion">
+      <span class="command">projectos</span>
+      <span class="">Un listado de mis proyectos</span>
+    </div>
+    <div class="opcion">
+      <span class="command">clear</span>
+      <span class="">borrar el historial de la terminal</span>
+    </div>
+    <div class="opcion">
+      <span class="command">educacion</span>
+      <span class="">Todo sobre mi informacion</span>
+    </div>
+  </div>
+
+  <div id="yair" class="hidden">
+    <div class="sectionTitle">Sobre Mí</div>
+    <div class="">Soy un entusiasta de la tecnología con experiencia en desarrollo de software, integración de APIs y automatización de procesos en empresas.Actualmente, trabajo en GGGroup (agencia de cobranzas y call center) optimizando procesos con tecnología y brindando Soporte IT. Me apasiona mejorar la eficiencia mediante soluciones tecnológicas innovadoras y prácticas.</div>
+  </div>
+
+  <div class="hidden" id="redes">
+    <div class="sectionTitle">Redes redeses</div>
+    <div class="column">
+      <span class="title">Command</span>
+      <span class="title">Value</span>
+    </div>
+    <div class="opcion">
+      <span class="command">LinkedIn</span>
+      <a href="https://www.linkedin.com" target="_blank"><span class="link">Ver Perfil</span></a>
+    </div>
+    <div class="opcion">
+      <span class="command">GitHub</span>
+      <a href="https://github.com" target="_blank"><span class="link">Ver Perfil</span></a>
+    </div>
+  </div>
+
+  <div class="hidden" id="projectos">
+    <div class="sectionTitle">Proyectos</div>
+    <div class="column">
+      <span class="title">Command</span>
+      <span class="title">Value</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Verificador de numeros en WhatsApp</span>
+      <a href="https://github.com/Yair-Bataglia/verificador-numeros-whatsapp-python" target="_blank"><span class="link">Link a GitHub</span></a>
+    </div>
+    <div class="opcion">
+      <span class="command">Este portafolio</span>
+      <a href="https://github.com/Yair-Bataglia/portfolio" target="_blank"><span class="link">Link a GitHub</span></a>
+    </div>
+  </div>
+  
+  <div class="hidden" id="habilidades">
+    <div class="sectionTitle">habilidades y Herramientas</div>
+    <div class="column">
+      <span class="title">Tecgnolgia</span>
+      <span class="title">Value</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Python</span>
+      <span class="">Desarrollo de aplicaciones, automatización de procesos y análisis de datos.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">CustomTkinter</span>
+      <span class="">Creación de interfaces gráficas con Python.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Selenium</span>
+      <span class="">Automatización de interacción con navegadores web.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Pandas</span>
+      <span class="">Análisis y manipulación de datos en Python.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Openpyxl</span>
+      <span class="">Manejo de archivos Excel en Python.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Node.js / Express</span>
+      <span class="">Desarrollo backend y API.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Bootstrap</span>
+      <span class="">Diseño web responsivo.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">JavaScript</span>
+      <span class="">Programación web interactiva.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">HTML / CSS</span>
+      <span class="">Estructura y diseño de páginas web.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Git / GitHub</span>
+      <span class="">Control de versiones y colaboración en proyectos.</span>
+    </div>
+    <div class="opcion">
+      <span class="command">Microsoft Access</span>
+      <span class="">Gestión de bases de datos en escritorio.</span>
+    </div>
+  </div>
+
+  <div class="hidden" id="experiencia">
+    <div class="sectionTitle">Experiencia</div>
+    <div class="opcion">
+      <span class="command">GGGroup</span>
+      <span class="">
+        Actualmente trabajo en GGGroup, una agencia de cobranzas y call center, donde optimizo procesos con tecnología y 
+        brindo soporte IT. Me enfoco en implementar soluciones tecnológicas que mejoren la eficiencia de la organización.
+      </span>
+    </div>
+  </div>
+  
+  <div class="hidden" id="educacion">
+    <div class="sectionTitle">Educación</div>
+    <div class="opcion">
+      <span class="command">Fundación Pescar</span>
+      <span class="">
+        Participé en un programa financiado por JP Morgan en colaboración con Fundación Pescar, donde me formé en 
+        <strong>EDUCACIONIR</strong>. Durante esta capacitación, aprendí:
+        <ul class="ul">
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>CSS</li>
+          <li>HTML</li>
+        </ul>
+      </span>
+    </div>
+    <div class="opcion">
+      <span class="command">Secundario (economía)</span>
+      <span class="">
+        Finalicé mis estudios secundarios con orientación en economía, lo que me proporcionó una sólida base en 
+        finanzas y administración, habilidades que complementan mi formación técnica en tecnología.
+      </span>
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
